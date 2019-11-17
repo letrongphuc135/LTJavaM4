@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="bg" template="/template/bg.jsp">
+    <put-attribute name="title" value="Title" />
+  </definition>
+
+  <definition name="chapter3.index" extends="bg">
+    <put-attribute name="title"  value="Chapter3 index.html page" />
+    <put-attribute name="content" value="/pages/chapter3/index.jsp"></put-attribute>
+  </definition>
+
+<!-- 
+  <definition name="chapter3.bai2.template"
+    template="/template/bg.jsp">
+    <put-attribute name="title"
+      value="Chapter3 template page" />
+    <put-attribute name="content"
+      value="/pages/chapter3/bai2_template.jsp"></put-attribute>
+  </definition>
+
+  <definition name="chapter4.bai1.upload"
+    template="/template/bg.jsp">
+    <put-attribute name="title" value="Simple upload"></put-attribute>
+    <put-attribute name="content"
+      value="/pages/chapter4/bai1_upload.jsp" />
+  </definition>
+-->
+  <definition name="chapter5.bai7.category.list"
+    template="/template/bg.jsp">
+    <put-attribute name="title" value="Categor List"></put-attribute>
+    <put-attribute name="content"
+      value="/pages/chapter5/bai7_category_list.jsp" />
+  </definition>
+  
+  <definition name="chapter5.bai1.author.list"
+    template="/template/bg.jsp">
+    <put-attribute name="title" value="Auhtor List"></put-attribute>
+    <put-attribute name="content"
+      value="/pages/chapter5/index.jsp" />
+  </definition>
+  
+  <definition name="chapter5.bai3.author.list"
+    template="/template/bg.jsp">
+    <put-attribute name="title" value="Auhtor Add"></put-attribute>
+    <put-attribute name="content"
+      value="/pages/chapter5/add.jsp" />
+  </definition>
+  <definition name="chapter5.bai4.author.list"
+    template="/template/bg.jsp">
+    <put-attribute name="title" value="Auhtor Edit"></put-attribute>
+    <put-attribute name="content"
+      value="/pages/chapter5/edit.jsp" />
+  </definition>
+  
+  <definition name="chapter5.bai8.category.list"
+    template="/template/bg.jsp">
+    <put-attribute name="title" value="Category Edit"></put-attribute>
+    <put-attribute name="content"
+      value="/pages/chapter5/edit.jsp" />
+  </definition>
+<!-- 
+  <definition name="chapter6.bai1.category.add"
+    template="/template/bg.jsp">
+    <put-attribute name="title" value="Categor add"/>
+    <put-attribute name="content"
+      value="/pages/chapter6/bai1_category_add.jsp" />
+  </definition>
+
+  <definition name="chapter3.bai3.product.list" template="/template/bghome.jsp">
+    <put-attribute name="title" value="Mini Shop"/>
+    <put-attribute name="content" value="/pages/chapter6/bai3_product_list.jsp" />
+  </definition> -->
+</tiles-definitions>
