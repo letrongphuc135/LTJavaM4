@@ -1,0 +1,73 @@
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="bg" template="/template/bg.jsp">
+		<put-attribute name="title" value="Title" />
+	</definition>
+	
+	<definition name="bghome" template="/template/bghome.jsp">
+		<put-attribute name="title" value="Title" />
+	</definition>
+
+	<definition name="hello" template="/template/bg.jsp">
+		<put-attribute name="title" value="Template Example" />
+		<put-attribute name="content"
+			value="/views/chapter1/index.jsp" />
+	</definition>
+
+	<definition name="template" extends="bg">
+		<put-attribute name="title" value="Template Example" />
+		<put-attribute name="content"
+			value="/views/chapter3/template.jsp" />
+	</definition>
+
+	<definition name="contact" extends="bg">
+		<put-attribute name="title" value="Contact Example" />
+		<put-attribute name="content"
+			value="/views/chapter2/contact.jsp" />
+	</definition>
+
+	<definition name="addcategory" extends="bg">
+		<put-attribute name="title" value="Contact Example" />
+		<put-attribute name="content"
+			value="/views/chapter6/addcategory.jsp" />
+	</definition>
+
+	<definition name="editcategory" extends="bg">
+		<put-attribute name="title" value="Contact Example" />
+		<put-attribute name="content"
+			value="/views/chapter6/editcategory.jsp" />
+	</definition>
+
+	<definition name="category" extends="bg">
+		<put-attribute name="title" value="Contact Example" />
+		<put-attribute name="content"
+			value="/views/chapter6/category.jsp" />
+	</definition>
+
+	<definition name="home.index" extends="bg">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="content"
+			value="/views/chapter6/product.jsp" />
+	</definition>
+
+	<definition name="home.detail" extends="bghome">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="content"
+			value="/views/chapter6/detailproduct.jsp" />
+	</definition>
+
+	<definition name="home.search" extends="bghome">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="content"
+			value="/views/chapter6/searchproduct.jsp" />
+	</definition>
+
+	<definition name="cart.index" extends="bghome">
+		<put-attribute name="title" value="Cart" />
+		<put-attribute name="content"
+			value="/views/chapter6/cart.jsp" />
+	</definition>
+
+</tiles-definitions>
